@@ -1,0 +1,61 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+}
+
+.container {
+}
+
+.overlayViewport {
+  position: fixed;
+  background: white;
+  height: 70px;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.contentViewport {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 70px; /* compensate for 1px border */
+}
+
+.overlayViewport,
+.contentViewport {
+  overflow: hidden;
+}
+
+.content {
+  padding-left: 20px;
+  padding-top: 50px;
+}
+
+.overlayViewport .content-wrapper {
+  background: rgba(74, 217, 217, 1.0);
+  overflow: hidden;
+}
+
+.rectangle {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.overlayViewport .content {
+  opacity: 0.7;
+  -webkit-filter: blur(40px);
+  filter: blur(40px);
+}
+
+.overlayContent {
+  bottom: 0;
+  left: 0;
+  line-height: 40px;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
